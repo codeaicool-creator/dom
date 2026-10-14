@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Bca subjects</h2>
+    <ul id="bob">
+        <li>HTMl</li>
+        <li>CSS</li>
+    </ul>
+    <button onclick="addsub()">Add new subject</button>
+    <script>
+        function addsub() {
+            let subject = document.createElement("li")
+            subject.textContent = "javascript"
+            let key = document.getElementById("bob")
+            key.appendChild(subject)
+        }
+    </script>
+</body>
+
+</html>

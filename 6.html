@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>student welcome system</h2>
+    <button onclick="come()">Enter your name</button>
+    <p id="code">Your welcome sms will appear here</p>
+    <script>
+        document.title = "student";
+
+        function come() {
+            let name1 = prompt("Enter name");
+            document.getElementById("code").textContent = "welcome to bimt, " + name1;
+
+
+        }
+    </script>
+
+</body>
+
+</html>

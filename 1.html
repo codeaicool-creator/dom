@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>this is my massege</h1>
+    <button onclick="addpara()">click here to add</button>
+    <div id="container"></div>
+    <script>
+        document.title = "Dom 1"
+
+        function addpara() {
+            let paragraph = document.createElement("p")
+
+            paragraph.textContent = "welcome to the js dom"
+
+            document.getElementById("container").appendChild(paragraph)
+
+        }
+    </script>
+</body>
+
+</html>
